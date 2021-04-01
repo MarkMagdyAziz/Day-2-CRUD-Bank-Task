@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Bank Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="my-3">
+        <button type="button" class="btn btn-outline-success" id="clientBtn">
+          Add client form
+        </button>
+        <button type="button" class="btn btn-outline-primary" id="withdrawBtn">
+          Withdraw
+        </button>
+        <button
+          type="button"
+          id="showClientsBtn"
+          class="btn btn-outline-success"
+        >
+          Show Clients
+        </button>
+        <form class="d-flex m-2">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </section>
+      <form id="addClientForm">
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Add Name</label>
+          <input type="name" class="form-control" id="InputName" />
+        </div>
+        <div class="mb-3">
+          <label for="InputBalance" class="form-label">Add Balance</label>
+          <input class="form-control" id="InputBalance" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <section id="withdrawSection">
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Add Name</label>
+          <input type="name" class="form-control" id="InputName" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </section>
+      <div
+        id="showClients"
+        class="card text-white bg-primary m-3"
+        style="max-width: 18rem"
+      >
+        <div class="card-header">Name:</div>
+        <div class="card-body">
+          <h5 class="card-title">Amount:</h5>
+
+          <a href="#" class="btn btn-warning">delete</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="bank.js"></script>
+  </body>
+</html>
